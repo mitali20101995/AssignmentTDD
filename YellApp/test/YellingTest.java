@@ -23,7 +23,7 @@ class YellingTest {
 	{
 		Yelling y = new Yelling();
 		String expectedResult = "Nobody is yelling";
-		String[] arrayInput = new String[]{null};
+		String[] arrayInput = null;
 		
 		String actualResult = y.scream(arrayInput);
 		
