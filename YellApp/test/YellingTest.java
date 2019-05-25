@@ -57,7 +57,7 @@ class YellingTest {
 	}
 	
 	@Test
-	//Requirement 4
+	//Requirement 5
 	public void testscream5()
 	{
 		Yelling y = new Yelling();
