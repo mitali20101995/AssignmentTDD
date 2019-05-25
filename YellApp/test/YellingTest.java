@@ -43,4 +43,16 @@ class YellingTest {
 		assertEquals(expectedResult,actualResult);
 	}
 
+	@Test
+	//Requirement 4
+	public void testscream4()
+	{
+		Yelling y = new Yelling();
+		String expectedResult = "Peter and Kadeem are yelling";
+		String[] arrayInput = new String[]{"Peter", "Kadeem"};
+		
+		String actualResult = y.scream(arrayInput);
+		
+		assertEquals(expectedResult,actualResult);
+	}
 }
