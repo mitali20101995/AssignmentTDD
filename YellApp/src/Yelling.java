@@ -9,7 +9,13 @@ public class Yelling {
 		{
 			return "Nobody is yelling";
 		}
-		String result = names[0] + " is yelling";
+		String s = names[0];
+		
+		if(s == s.toUpperCase())
+		{
+			return s + " IS YELLING";
+		}
+		String result = s + " is yelling";
 		return result;
 	}
 
