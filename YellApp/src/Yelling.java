@@ -6,6 +6,7 @@ public class Yelling {
 	public String scream(String[] names)
 	{
 		String result = "";
+		String upperCaseName = "";
 		if(names == null)
 		{
 			return "Nobody is yelling";
@@ -24,11 +25,22 @@ public class Yelling {
 		}
 		
 		else if(names.length > 2) {
+
+			
 			for(int i=0;i<names.length - 1;i++)
 			{
-				result = result + names[i] + ", ";
-			}
+				if(names[i] != names[i].toUpperCase())
+				{
+					result = result + names[i] + ", ";
+				}
+				else {
+					upperCaseName = names[i];
+				}
+			}	
 			result = result + "and " + names[names.length - 1] + " are yelling";
+			if(upperCaseName != "") {
+				result += ". SO IS " + upperCaseName + "!";
+			}
 			return result;
 		}
 		
