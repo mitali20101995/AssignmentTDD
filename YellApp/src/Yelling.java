@@ -3,13 +3,13 @@ public class Yelling {
 	
 	
 	//@param name array
-	public String scream(String[] name)
+	public String scream(String[] names)
 	{
-		if(name == null)
+		if(names == null)
 		{
 			return "Nobody is yelling";
 		}
-		String result = name[0] + " is yelling";
+		String result = names[0] + " is yelling";
 		return result;
 	}
 
